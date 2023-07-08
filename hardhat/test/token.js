@@ -25,6 +25,11 @@ describe("Token Contract", () => {
 
       expect(await hardhatToken.totalSupply()).to.equal(ownerBalance);
     });
+
+    it("show me", async () => {
+      await hardhatToken.test1();
+      await hardhatToken.test2();
+    });
   });
 
   describe("Transactions", async () => {

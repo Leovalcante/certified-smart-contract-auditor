@@ -28,4 +28,16 @@ contract Token {
     function balanceOf(address account) external view returns (uint) {
         return balances[account];
     }
+
+    function test1() external view {
+        for (uint i = 0; i < 5; i++) {
+            console.log(i);
+        }
+    }
+
+    function test2() external view {
+        for (uint i = 0; i < 5; ++i) {
+            console.log(i);
+        }
+    }
 }
